@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="uk" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SchoolDop — шкільні замовлення</title>
+<meta name="theme-color" content="#0b0d12">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||'dark';const a=localStorage.getItem('accent');if(a)document.documentElement.dataset.accent=a}catch(e){}</script>
+</head>
+<body>
+<div id="pre"><div class="pre-logo">School<br>Dop</div><div class="pre-bar"><i></i></div></div>
+<header id="top" hidden><b class="logo">SchoolDop</b><button id="themeBtn" class="icon" aria-label="Сменить тему"></button></header>
+<main id="view"></main>
+<nav id="nav" hidden></nav>
+<div id="toast" role="status"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{})</script>
+</body>
+</html>
